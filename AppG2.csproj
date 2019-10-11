@@ -46,23 +46,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="frmThongTinSinhVien.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmThongTinSinhVien.Designer.cs">
-      <DependentUpon>frmThongTinSinhVien.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Controller\StudentService.cs" />
     <Compile Include="frmTinhToanCoBan.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmTinhToanCoBan.Designer.cs">
       <DependentUpon>frmTinhToanCoBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\HistoryLearning.cs" />
+    <Compile Include="Model\Student.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmThongTinSinhVien.resx">
-      <DependentUpon>frmThongTinSinhVien.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="View\frmThongtinsinhvien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmThongtinsinhvien.Designer.cs">
+      <DependentUpon>frmThongtinsinhvien.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmTinhToanCoBan.resx">
       <DependentUpon>frmTinhToanCoBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -76,6 +76,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\frmThongtinsinhvien.resx">
+      <DependentUpon>frmThongtinsinhvien.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -112,6 +115,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\deleete2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\learninghistory.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\student.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

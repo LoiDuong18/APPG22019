@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppG2.View;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace AppG2
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmThongTinSinhVien());
+            Application.Run(new frmThongTinSinhVien("1021001"));
         }
     }
 }

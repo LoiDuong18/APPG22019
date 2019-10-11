@@ -1,4 +1,4 @@
-﻿namespace AppG2
+﻿namespace AppG2.View
 {
     partial class frmThongTinSinhVien
     {
@@ -31,19 +31,18 @@
             this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkGioiTinh = new System.Windows.Forms.CheckBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtQueQuan = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.dtpNgaySinh = new System.Windows.Forms.DateTimePicker();
+            this.txtMaSinhVien = new System.Windows.Forms.TextBox();
+            this.txtHo = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgQuaTrinhHocTap = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -58,12 +57,15 @@
             this.picAnhDaiDien = new System.Windows.Forms.PictureBox();
             this.menuAvatar = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.mniXoaAnhDaiDien = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtTen = new System.Windows.Forms.TextBox();
+            this.bdsQuaTrinhHocTap = new System.Windows.Forms.BindingSource(this.components);
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgQuaTrinhHocTap)).BeginInit();
             this.statusStrip1.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).BeginInit();
             this.menuAvatar.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bdsQuaTrinhHocTap)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -84,15 +86,15 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Họ và tên:";
             // 
-            // checkBox1
+            // chkGioiTinh
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(109, 58);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(48, 17);
-            this.checkBox1.TabIndex = 3;
-            this.checkBox1.Text = "Nam";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkGioiTinh.AutoSize = true;
+            this.chkGioiTinh.Location = new System.Drawing.Point(109, 58);
+            this.chkGioiTinh.Name = "chkGioiTinh";
+            this.chkGioiTinh.Size = new System.Drawing.Size(48, 17);
+            this.chkGioiTinh.TabIndex = 3;
+            this.chkGioiTinh.Text = "Nam";
+            this.chkGioiTinh.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
@@ -112,13 +114,13 @@
             this.label6.TabIndex = 1;
             this.label6.Text = "Quê quán:";
             // 
-            // textBox1
+            // txtQueQuan
             // 
-            this.textBox1.Location = new System.Drawing.Point(109, 108);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(286, 53);
-            this.textBox1.TabIndex = 4;
+            this.txtQueQuan.Location = new System.Drawing.Point(109, 108);
+            this.txtQueQuan.Multiline = true;
+            this.txtQueQuan.Name = "txtQueQuan";
+            this.txtQueQuan.Size = new System.Drawing.Size(286, 53);
+            this.txtQueQuan.TabIndex = 4;
             // 
             // label7
             // 
@@ -129,28 +131,28 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "Ngày sinh:";
             // 
-            // dateTimePicker1
+            // dtpNgaySinh
             // 
-            this.dateTimePicker1.CustomFormat = "dd/MM/yyyy";
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(109, 82);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(118, 20);
-            this.dateTimePicker1.TabIndex = 5;
+            this.dtpNgaySinh.CustomFormat = "dd/MM/yyyy";
+            this.dtpNgaySinh.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpNgaySinh.Location = new System.Drawing.Point(109, 82);
+            this.dtpNgaySinh.Name = "dtpNgaySinh";
+            this.dtpNgaySinh.Size = new System.Drawing.Size(118, 20);
+            this.dtpNgaySinh.TabIndex = 5;
             // 
-            // textBox2
+            // txtMaSinhVien
             // 
-            this.textBox2.Location = new System.Drawing.Point(109, 6);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(286, 20);
-            this.textBox2.TabIndex = 6;
+            this.txtMaSinhVien.Location = new System.Drawing.Point(109, 6);
+            this.txtMaSinhVien.Name = "txtMaSinhVien";
+            this.txtMaSinhVien.Size = new System.Drawing.Size(286, 20);
+            this.txtMaSinhVien.TabIndex = 6;
             // 
-            // textBox3
+            // txtHo
             // 
-            this.textBox3.Location = new System.Drawing.Point(109, 32);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(286, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtHo.Location = new System.Drawing.Point(109, 32);
+            this.txtHo.Name = "txtHo";
+            this.txtHo.Size = new System.Drawing.Size(186, 20);
+            this.txtHo.TabIndex = 6;
             // 
             // panel1
             // 
@@ -158,7 +160,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dtgQuaTrinhHocTap);
             this.panel1.Controls.Add(this.statusStrip1);
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Location = new System.Drawing.Point(15, 167);
@@ -166,38 +168,37 @@
             this.panel1.Size = new System.Drawing.Size(526, 203);
             this.panel1.TabIndex = 7;
             // 
-            // dataGridView1
+            // dtgQuaTrinhHocTap
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dtgQuaTrinhHocTap.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgQuaTrinhHocTap.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
-            this.Column3,
             this.Column4});
-            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 25);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(524, 154);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgQuaTrinhHocTap.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtgQuaTrinhHocTap.Location = new System.Drawing.Point(0, 25);
+            this.dtgQuaTrinhHocTap.MultiSelect = false;
+            this.dtgQuaTrinhHocTap.Name = "dtgQuaTrinhHocTap";
+            this.dtgQuaTrinhHocTap.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtgQuaTrinhHocTap.Size = new System.Drawing.Size(524, 154);
+            this.dtgQuaTrinhHocTap.TabIndex = 0;
             // 
             // Column1
             // 
+            this.Column1.DataPropertyName = "IDHistoryLearning";
             this.Column1.HeaderText = "STT";
             this.Column1.Name = "Column1";
             // 
             // Column2
             // 
-            this.Column2.HeaderText = "Từ năm";
+            this.Column2.DataPropertyName = "Period";
+            this.Column2.HeaderText = "Thời gian học";
             this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Đến năm";
-            this.Column3.Name = "Column3";
             // 
             // Column4
             // 
             this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Column4.DataPropertyName = "Address";
             this.Column4.HeaderText = "Địa chỉ";
             this.Column4.Name = "Column4";
             // 
@@ -214,7 +215,7 @@
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(89, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(88, 17);
             this.toolStripStatusLabel1.Text = "Tổng số mục: 0";
             // 
             // toolStrip1
@@ -260,7 +261,7 @@
             this.toolStripButton1.Image = global::AppG2.Properties.Resources.add;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(58, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(57, 22);
             this.toolStripButton1.Text = "Thêm";
             // 
             // lnkChonAnhDaiDien
@@ -312,7 +313,6 @@
             this.picAnhDaiDien.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picAnhDaiDien.TabIndex = 0;
             this.picAnhDaiDien.TabStop = false;
-            this.picAnhDaiDien.Click += new System.EventHandler(this.PicAnhDaiDien_Click);
             this.picAnhDaiDien.DragDrop += new System.Windows.Forms.DragEventHandler(this.PicAnhDaiDien_DragDrop);
             this.picAnhDaiDien.DragEnter += new System.Windows.Forms.DragEventHandler(this.PicAnhDaiDien_DragEnter);
             // 
@@ -331,6 +331,13 @@
             this.mniXoaAnhDaiDien.Text = "Xóa ảnh đại diện";
             this.mniXoaAnhDaiDien.Click += new System.EventHandler(this.MniXoaAnhDaiDien_Click);
             // 
+            // txtTen
+            // 
+            this.txtTen.Location = new System.Drawing.Point(310, 32);
+            this.txtTen.Name = "txtTen";
+            this.txtTen.Size = new System.Drawing.Size(85, 20);
+            this.txtTen.TabIndex = 6;
+            // 
             // frmThongTinSinhVien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,11 +347,12 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lnkChonAnhDaiDien);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.txtTen);
+            this.Controls.Add(this.txtHo);
+            this.Controls.Add(this.txtMaSinhVien);
+            this.Controls.Add(this.dtpNgaySinh);
+            this.Controls.Add(this.txtQueQuan);
+            this.Controls.Add(this.chkGioiTinh);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label5);
@@ -357,13 +365,14 @@
             this.Text = "Thông tin sinh viên";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgQuaTrinhHocTap)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAnhDaiDien)).EndInit();
             this.menuAvatar.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bdsQuaTrinhHocTap)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -374,20 +383,16 @@
         private System.Windows.Forms.PictureBox picAnhDaiDien;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.CheckBox chkGioiTinh;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtQueQuan;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.DateTimePicker dtpNgaySinh;
+        private System.Windows.Forms.TextBox txtMaSinhVien;
+        private System.Windows.Forms.TextBox txtHo;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridView dtgQuaTrinhHocTap;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripLabel toolStripLabel1;
         private System.Windows.Forms.StatusStrip statusStrip1;
@@ -400,5 +405,10 @@
         private System.Windows.Forms.Button btnCapNhat;
         private System.Windows.Forms.ContextMenuStrip menuAvatar;
         private System.Windows.Forms.ToolStripMenuItem mniXoaAnhDaiDien;
+        private System.Windows.Forms.TextBox txtTen;
+        private System.Windows.Forms.BindingSource bdsQuaTrinhHocTap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
     }
 }
