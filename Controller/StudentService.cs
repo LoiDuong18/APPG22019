@@ -26,7 +26,7 @@ namespace AppG2.Controller
                 Gender = GENDER.Male
             };
             student.ListHistoryLearning = new List<HistoryLearning>();
-            for (int i = 1; i <= 12; i++)
+            for (int i = 1; i <= 5; i++)
             {
                 HistoryLearning historyLearning = new HistoryLearning
                 {

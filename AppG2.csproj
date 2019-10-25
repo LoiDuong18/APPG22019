@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controller\StudentService.cs" />
+    <Compile Include="frmQuatrinhHocTap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuatrinhHocTap.Designer.cs">
+      <DependentUpon>frmQuatrinhHocTap.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmTinhToanCoBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -63,6 +69,9 @@
     <Compile Include="View\frmThongtinsinhvien.Designer.cs">
       <DependentUpon>frmThongtinsinhvien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="frmQuatrinhHocTap.resx">
+      <DependentUpon>frmQuatrinhHocTap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmTinhToanCoBan.resx">
       <DependentUpon>frmTinhToanCoBan.cs</DependentUpon>
     </EmbeddedResource>

@@ -113,5 +113,44 @@ namespace AppG2.View
             picAnhDaiDien.Image = Properties.Resources.avatar;
             File.Delete(pathAvatarImg);
         }
+
+        private void ToolStripButton3_Click(object sender, EventArgs e)
+        {
+            var rs = MessageBox.Show(
+                 "Bạn có chắc là muốn xóa dữ liệu này không?",
+                 "Thông báo",
+                 MessageBoxButtons.OKCancel,
+                 MessageBoxIcon.Warning);
+            if (rs == DialogResult.OK)
+            {
+                //Viết code xóa dữ liệu tại đây
+                var history = bdsQuaTrinhHocTap.Current as HistoryLearning;
+                MessageBox.Show(
+                    "Bạn đã xóa thành công. Địa chỉ: " + history.Address);
+            }
+            else
+            {
+                MessageBox.Show("Bạn đã không xóa");
+            }
+        }
+
+        private void ToolStripButton1_Click(object sender, EventArgs e)
+        {
+            var f = new frmQuatrinhHocTap();
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                //tien hanh nhap du lieu
+            }
+        }
+
+        private void BtnSua_Click(object sender, EventArgs e)
+        {
+            var history = bdsQuaTrinhHocTap.Current as HistoryLearning;
+            var f = new frmQuatrinhHocTap(history);
+            if (f.ShowDialog() == DialogResult.OK)
+            {
+                //tien hanh nhap du lieu
+            }
+        }
     }
 }
