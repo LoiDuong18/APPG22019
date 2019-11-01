@@ -20,3 +20,6 @@ D:\TAI LIEU NAM 3\CNTT-DHKH-NAM4-HK1\hahah\AppG22019\AppG22019\AppG2\obj\Debug\A
 D:\TAI LIEU NAM 3\CNTT-DHKH-NAM4-HK1\hahah\AppG22019\AppG22019\AppG2\obj\Debug\AppG2.exe
 D:\TAI LIEU NAM 3\CNTT-DHKH-NAM4-HK1\hahah\AppG22019\AppG22019\AppG2\obj\Debug\AppG2.pdb
 D:\TAI LIEU NAM 3\CNTT-DHKH-NAM4-HK1\hahah\AppG22019\AppG22019\AppG2\obj\Debug\AppG2.View.frmThongTinSinhVien.resources
+D:\TAI LIEU NAM 3\CNTT-DHKH-NAM4-HK1\hahah\AppG22019\AppG22019\AppG2\bin\Debug\Data\learninghistory.txt
+D:\TAI LIEU NAM 3\CNTT-DHKH-NAM4-HK1\hahah\AppG22019\AppG22019\AppG2\obj\Debug\AppG2.View.frmQuatrinhHocTap.resources
+D:\TAI LIEU NAM 3\CNTT-DHKH-NAM4-HK1\hahah\AppG22019\AppG22019\AppG2\obj\Debug\AppG2.FrmContacts.resources
