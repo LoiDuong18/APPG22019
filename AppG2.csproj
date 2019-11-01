@@ -46,7 +46,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\ContactsService.cs" />
     <Compile Include="Controller\StudentService.cs" />
+    <Compile Include="FrmContacts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmContacts.Designer.cs">
+      <DependentUpon>FrmContacts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmContacts1.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmQuatrinhHocTap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +69,7 @@
     <Compile Include="frmTinhToanCoBan.Designer.cs">
       <DependentUpon>frmTinhToanCoBan.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model\ClientContact.cs" />
     <Compile Include="Model\HistoryLearning.cs" />
     <Compile Include="Model\Student.cs" />
     <Compile Include="Program.cs" />
@@ -69,6 +80,9 @@
     <Compile Include="View\frmThongtinsinhvien.Designer.cs">
       <DependentUpon>frmThongtinsinhvien.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FrmContacts.resx">
+      <DependentUpon>FrmContacts.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmQuatrinhHocTap.resx">
       <DependentUpon>frmQuatrinhHocTap.cs</DependentUpon>
     </EmbeddedResource>
@@ -126,6 +140,7 @@
     <None Include="Resources\deleete2.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Data\client.txt" />
     <Content Include="Data\learninghistory.txt">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
